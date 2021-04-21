@@ -1,5 +1,5 @@
 import './HomePage.css'
-import { ReactComponent as SunLogo } from "../../Images/SunLogo.svg";
+import { ReactComponent as LeaderShip } from "../../Images/LeaderShip.svg";
 import Header from '../Header/Header.js'
 
 
@@ -12,6 +12,7 @@ function HomePage() {
             <h2 className='hope-title' data-cy='hope-title'>Hope</h2>
           </article>
           <article className='catagory leadership' data-cy='catagory-leadership'>
+            <LeaderShip className='leadership-logo'/>
             <h2 className='leadership-title' data-cy='leadership-title'>Leadership</h2>
           </article>
           <article className='catagory inspiration' data-cy='catagory-inspiration'>
