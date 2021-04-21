@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css';
 import CardDisplay from '../CardDisplay/CardDisplay.js'
-import Header from '../Header/Header.js'
+
 import HomePage from '../HomePage/HomePage.js'
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-     <Header/>
+     
      <HomePage/>
     {/* {leadership && <CardDisplay quoteList={leadership} />} */}
     </>

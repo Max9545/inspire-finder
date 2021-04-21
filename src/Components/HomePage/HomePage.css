@@ -1,3 +1,5 @@
+
+
 .hope {
   background-image: url('../../Images/SunLogo.svg');
   background-repeat: no-repeat;
@@ -18,4 +20,19 @@
   width: 36vw;
   display: flex;
   border: 1px solid black;
+  border-radius: 5px;
+  margin: 5vh 0 5vh 0;
 }
+.select-catagory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+/* .select-catagory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: center;
+  margin: 2%;
+} */
