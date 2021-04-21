@@ -15,7 +15,6 @@ function CardDisplay({ quoteList }) {
                 author={quote.author}
               />
     })
-
     setCurrentCards(latestCards)
   },[])
 

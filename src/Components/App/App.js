@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css';
 import CardDisplay from '../CardDisplay/CardDisplay.js'
+import Header from '../Header/Header.js'
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <>
-     <p>HI</p>
+     <Header/>
     {leadership && <CardDisplay quoteList={leadership} />}
     </>
   );
