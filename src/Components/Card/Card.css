@@ -1,0 +1,13 @@
+.card {
+  border: solid 2px black;
+  margin: 2vh 1vw 2vh 2vw;
+  padding: 5%;
+}
+
+.leadership {
+  background-color: purple;
+}
+
+.hope {
+  background-color:rgb(230, 97, 0) ;
+}

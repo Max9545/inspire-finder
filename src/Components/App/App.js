@@ -6,26 +6,15 @@ import HomePage from '../HomePage/HomePage.js'
 
 function App() {
 
-
-  // const [inspirational, setInspirational] = useState()
-  // const [leadership, setLeadership] = useState()
-  // const [hope, setHope] = useState()
   const [favorites, setFavorites] = useState([])
 
-
-  
- 
   const addToFavorites = (newFavorite) => {
-   
-      
-  
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
         favorites.push(newFavorite)
         setFavorites(favorites)
         // setFavorites([...favorites, newFavorite]) why does this not work? some kind of background prevention from the API?
         console.log(favorites)
       }
-    
   }
 
 
@@ -39,6 +28,7 @@ function App() {
      <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' addToFavorites={addToFavorites}/>}/>
      <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' addToFavorites={addToFavorites}/>}/>
      <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' addToFavorites={addToFavorites}/>}/>
+     {/* <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites}/>}/> */}
     </>
   );
 }
