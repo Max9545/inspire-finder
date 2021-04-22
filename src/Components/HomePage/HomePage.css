@@ -21,6 +21,8 @@
   border: 1px solid black;
   border-radius: 5px;
   margin: 5vh 0 5vh 0;
+  text-decoration: none;
+  color: black;
 }
 
 .select-catagory {
@@ -45,12 +47,30 @@
 
 .inspirational {
   background-color: rgb(186, 164, 226);
+  background-image: url('../../Images/CatBoss.jpeg');
+  background-size: cover;
+}
 
+.inspirational-title {
+  margin-top: 11vh;
+  color: aliceblue;
+  background-color: black;
+  font-size: .7em;
+  height: 2em;
+  width: 100%;
 }
 
 .laughs {
-  background-image: url('../../Images/SunLogo.svg');
+  background-color: rgb(153, 170, 171);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: center; */
+}
 
+.microphone {
+  height: 2vh;
+  width: 4vw;
 }
 /* .select-catagory {
   display: grid;
