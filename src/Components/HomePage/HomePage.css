@@ -61,11 +61,26 @@
 }
 
 .laughs {
-  background-color: rgb(153, 170, 171);
+  /* background-color: rgb(153, 170, 171); */
+  background: repeating-linear-gradient(
+  45deg,
+  rgb(153, 170, 171),
+  yellow 10px,
+  #465298 10px,
+  #465298 20px
+);
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* align-content: center; */
+}
+
+.laughs-title {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  margin-bottom: 9vh;
 }
 
 .microphone {
