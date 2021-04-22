@@ -5,7 +5,8 @@ function Card({ quote, author, addToFavorites, id, meep }) {
     <>
       <p>{quote}</p>
       <p>author:{author}</p>
-      <button onClick={() => addToFavorites(meep)}>Remember This One</button>
+      <button onClick={() => addToFavorites({quote: quote, author: author, id: id})}>Remember This One</button>
+      {/* <button onClick={() => addToFavorites(meep)}>Remember This One</button> */}
       {/* <button onClick={() => addToFavorites({quote: quote, author: author, id: id, meep: meep})}>Remember This One</button> */}
     </>
   )
