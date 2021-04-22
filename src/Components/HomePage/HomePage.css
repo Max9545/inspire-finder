@@ -22,6 +22,7 @@
   border-radius: 5px;
   margin: 5vh 0 5vh 0;
 }
+
 .select-catagory {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +41,16 @@
 }
 .leadership-logo {
   height: 3vh;
+}
+
+.inspirational {
+  background-color: rgb(186, 164, 226);
+
+}
+
+.laughs {
+  background-image: url('../../Images/SunLogo.svg');
+
 }
 /* .select-catagory {
   display: grid;

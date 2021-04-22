@@ -11,8 +11,10 @@ function App() {
   const addToFavorites = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
         favorites.push(newFavorite)
+        console.log(favorites)
         setFavorites(favorites)
-        // setFavorites([...favorites, newFavorite]) why does this not work? some kind of background prevention from the API?
+        setFavorites([...favorites, newFavorite]) 
+        //why does this not work? some kind of background prevention from the API?
         console.log(favorites)
       }
   }
@@ -20,7 +22,7 @@ function App() {
 
 
   return (
-    <>
+    <div className='app'>
      
      
      <Route exact path='/' render={() => <HomePage/>}/>
@@ -29,7 +31,7 @@ function App() {
      <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' addToFavorites={addToFavorites}/>}/>
      <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' addToFavorites={addToFavorites}/>}/>
      {/* <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites}/>}/> */}
-    </>
+    </div>
   );
 }
 
