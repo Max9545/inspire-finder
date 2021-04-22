@@ -37,9 +37,19 @@ function App() {
   // },[])
   const addToFavorites = (newFavorite) => {
     // if(!favorites.find(favorite => favorite.id === newFavorite)) {
-      setFavorites([...favorites, newFavorite])
-      console.log([...favorites, newFavorite])
+      // setFavorites([...favorites, newFavorite])
+      // console.log([...favorites, newFavorite])
     // }
+    const meep = newFavorite
+    const morps = favorites
+    if(!morps.includes(meep)) {
+      morps.push(meep)
+      setFavorites(morps)
+      console.log('meeps',meep)
+      console.log('morps', morps)
+      console.log(favorites)
+    }
+    
   }
 
 

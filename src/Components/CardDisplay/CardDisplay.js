@@ -19,10 +19,11 @@ function CardDisplay({ quoteType, addToFavorites }) {
 
   useEffect(() => {
     if(quoteList) {
-      const latestCards = quoteList.map((quote, index) => {
+      const latestCards = quoteList.map((quote) => {
         return <Card
-                  key={Date.now(), index}
-                  id={index}
+                  key={quote.id}
+                  id={quote.id}
+                  meep={`${quote.id}`}
                   quote={quote.body}
                   author={quote.author}
                   addToFavorites={addToFavorites}
