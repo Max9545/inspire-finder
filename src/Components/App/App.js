@@ -10,7 +10,7 @@ function App() {
   // const [inspirational, setInspirational] = useState()
   // const [leadership, setLeadership] = useState()
   // const [hope, setHope] = useState()
-
+  const [favorites, setFavorites] = useState([])
 
 
   
@@ -35,16 +35,23 @@ function App() {
   //   .then(res => res.json())
   //   .then(data => setLeadership(data.quotes))
   // },[])
+  const addToFavorites = (newFavorite) => {
+    // if(!favorites.find(favorite => favorite.id === newFavorite)) {
+      setFavorites([...favorites, newFavorite])
+      console.log([...favorites, newFavorite])
+    // }
+  }
+
 
   return (
     <>
      
      
      <Route exact path='/' render={() => <HomePage/>}/>
-     <Route exact path='/hope' render={() => <CardDisplay quoteType='hope'/>}/>
-     <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership'/>}/>
-     <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational'/>}/>
-     <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny'/>}/>
+     <Route exact path='/hope' render={() => <CardDisplay quoteType='hope' addToFavorites={addToFavorites}/>}/>
+     <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' addToFavorites={addToFavorites}/>}/>
+     <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' addToFavorites={addToFavorites}/>}/>
+     <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' addToFavorites={addToFavorites}/>}/>
      
     {/* {leadership && <CardDisplay quoteList={leadership} />} */}
     </>
