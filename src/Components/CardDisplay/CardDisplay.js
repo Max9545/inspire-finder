@@ -23,7 +23,6 @@ function CardDisplay({ quoteType, addToFavorites }) {
         return <Card
                   key={quote.id}
                   id={quote.id}
-                  meep={`${quote.id}`}
                   quote={quote.body}
                   author={quote.author}
                   addToFavorites={addToFavorites}
