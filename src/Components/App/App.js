@@ -37,8 +37,9 @@ function App() {
   // },[])
   const addToFavorites = (newFavorite) => {
     // if(!favorites.find(favorite => favorite.id === newFavorite)) {
-      // setFavorites([...favorites, newFavorite])
-      // console.log([...favorites, newFavorite])
+      //this spit out correct in constole and nothing in state
+      // setFavorites(favorites.push(newFavorite))
+      // console.log(favorites, newFavorite)
     // }
     const meep = newFavorite
     const morps = favorites
