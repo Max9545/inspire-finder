@@ -1,6 +1,7 @@
 import './HomePage.css'
 import { ReactComponent as LeaderShip } from "../../Images/LeaderShip.svg";
 import Header from '../Header/Header.js'
+import { Link } from 'react-router-dom'
 
 
 function HomePage() {
@@ -8,9 +9,9 @@ function HomePage() {
       <div className='home-page'>
         <Header/> 
         <section className='select-catagory' data-cy='select-catagory'>
-          <article className='catagory hope' data-cy='catagory-hope'>
+          <Link to='/hope'className='catagory hope' data-cy='catagory-hope'>
             <h2 className='hope-title' data-cy='hope-title'>Hope</h2>
-          </article>
+          </Link>
           <article className='catagory leadership' data-cy='catagory-leadership'>
             <LeaderShip className='leadership-logo'/>
             <h2 className='leadership-title' data-cy='leadership-title'>Leadership</h2>
