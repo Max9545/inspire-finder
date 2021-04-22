@@ -12,16 +12,16 @@ function HomePage() {
           <Link to='/hope'className='catagory hope' data-cy='catagory-hope'>
             <h2 className='hope-title' data-cy='hope-title'>Hope</h2>
           </Link>
-          <article className='catagory leadership' data-cy='catagory-leadership'>
+          <Link to='leadership'className='catagory leadership' data-cy='catagory-leadership'>
             <LeaderShip className='leadership-logo'/>
             <h2 className='leadership-title' data-cy='leadership-title'>Leadership</h2>
-          </article>
-          <article className='catagory inspiration' data-cy='catagory-inspiration'>
-            <h2 className='inspiration-title' data-cy='inspiration-title'>Inspiration</h2>
-          </article>
-          <article className='catagory laughs' data-cy='catagory-laughs'>
+          </Link>
+          <Link to='inspirational' className='catagory inspirational' data-cy='catagory-inspirational'>
+            <h2 className='inspirational-title' data-cy='inspirational-title'>Inspirational</h2>
+          </Link>
+          <Link to='laughs' className='catagory laughs' data-cy='catagory-laughs'>
             <h2 className='laughs-title' data-cy='laughs-title'>Laughs</h2>
-          </article>
+          </Link>
         </section>
         <button>Favorites</button> 
       </div>

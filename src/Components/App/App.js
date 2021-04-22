@@ -42,6 +42,10 @@ function App() {
      
      <Route exact path='/' render={() => <HomePage/>}/>
      <Route exact path='/hope' render={() => <CardDisplay quoteType='hope'/>}/>
+     <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership'/>}/>
+     <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational'/>}/>
+     <Route exact path='/funny' render={() => <CardDisplay quoteType='funny'/>}/>
+     
     {/* {leadership && <CardDisplay quoteList={leadership} />} */}
     </>
   );

@@ -33,7 +33,7 @@ function CardDisplay({ quoteType }) {
 
   return (
     <>
-    <p>hi</p>
+    <p>{`${quoteType} quotes`}</p>
       <Card/>
       {currentCards && currentCards}
     </>
