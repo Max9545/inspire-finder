@@ -37,19 +37,23 @@ function App() {
   // },[])
   const addToFavorites = (newFavorite) => {
     // if(!favorites.find(favorite => favorite.id === newFavorite)) {
-      //this spit out correct in constole and nothing in state
-      // setFavorites(favorites.push(newFavorite))
-      // console.log(favorites, newFavorite)
+      //this spit out string numbers in the constole and nothing/a counter in state
+      if(!favorites.includes(newFavorite)) {
+        favorites.push(newFavorite)
+        setFavorites(favorites)
+        console.log(favorites, newFavorite)
+      }
+      
     // }
-    const meep = newFavorite
-    const morps = favorites
-    if(!morps.includes(meep)) {
-      morps.push(meep)
-      setFavorites(morps)
-      console.log('meeps',meep)
-      console.log('morps', morps)
-      console.log(favorites)
-    }
+    // const meep = newFavorite
+    // const morps = favorites
+    // if(!morps.includes(meep)) {
+    //   morps.push(meep)
+    //   setFavorites(morps)
+    //   console.log('meeps',meep)
+    //   console.log('morps', morps)
+    //   console.log(favorites)
+    // }
     
   }
 
