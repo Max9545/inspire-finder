@@ -39,7 +39,7 @@ function CardDisplay({ quoteType, addToFavorites}) {
   return (
     <>
     <Header/>
-    <p>{`Quotes In Regards To ${quoteType}`}</p>
+    <h3 className='card-display-header' data-cy='card-display-header'>{`${quoteType} Quotes`}</h3>
       {currentCards && currentCards}
     </>
   )

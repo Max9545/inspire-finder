@@ -4,10 +4,49 @@
   padding: 0 2vw 1vh 2vw;
 }
 
+.quote {
+  font-weight: bold;
+}
+
+.author {
+   text-align: end;
+   margin-right: 2vw;
+  }
+
 .leadership-card {
   background-color: rgb(93, 58, 155);
 }
 
 .hope-card {
   background-color:rgb(230, 97, 0) ;
+}
+
+.inspirational-card {
+  background-color: rgb(186, 164, 226);
+}
+
+.funny-card {
+  background: repeating-linear-gradient(
+  45deg,
+  rgb(153, 170, 171),
+  yellow 10px,
+  #465298 10px,
+  #465298 20px)
+}
+
+.funny-quote {
+  background-color: white;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.funny-author {
+  background-color: white;
+  padding: 3%;
+  border-radius: 5px;
+  width: 35%;
+  display: flex;
+  align-self: flex-end;
+  /* justify-content: flex-end; */
+  /* align-content: flex-end; */
 }

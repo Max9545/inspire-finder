@@ -18,7 +18,7 @@ function HomePage() {
             <h2 className='leadership-title' data-cy='leadership-title'>Leadership</h2>
           </Link>
           <Link to='inspirational' className='catagory inspirational' data-cy='catagory-inspirational'>
-            <h2 className='inspirational-title' data-cy='inspirational-title'>Inspirational ☆ ☆ ☆ ☆ </h2>
+            <h2 className='inspirational-title' data-cy='inspirational-title'>Inspirational ☆ ☆</h2>
           </Link>
           <Link to='laughs' className='catagory laughs' data-cy='catagory-laughs'>
             <h2 className='laughs-title' data-cy='laughs-title'>Laughs<Micropohone className='microphone'/></h2>
