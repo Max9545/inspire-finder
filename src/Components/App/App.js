@@ -28,7 +28,6 @@ searchQuotes('puppies')
        favorites.filter(favorite => favorite.id !== newFavorite.id)
         setFavorites(favorites.filter(favorite => favorite.id !== newFavorite.id))
       }
-      console.log(favorites)
   }
 
 

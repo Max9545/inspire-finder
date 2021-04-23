@@ -23,7 +23,7 @@ function FavoritesDisplay({ favorites,  toggleFavorite }) {
     <>
       <Header/>
       <h3>Use These As Intent For Your Days</h3>
-      {favorites && <p>No Favs yet</p>}
+      {!favorites && <p>No Favs yet</p>}
       {favCards && favCards}
     </>
   )
