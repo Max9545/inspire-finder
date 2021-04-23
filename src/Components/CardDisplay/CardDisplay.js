@@ -21,7 +21,9 @@ function CardDisplay({ quoteType, addToFavorites}) {
   useEffect(() => {
     if(quoteList) {
       const latestCards = quoteList.map((quote) => {
-        return <Card
+        return (
+          <>
+            <Card
                   key={quote.id}
                   id={quote.id}
                   quote={quote.body}
@@ -29,6 +31,9 @@ function CardDisplay({ quoteType, addToFavorites}) {
                   quoteType={quoteType}
                   addToFavorites={addToFavorites}
                 />
+                <button onClick={() => addToFavorites({ id: quote.id, quote: quote.body, author: quote.author,  quoteType: quoteType})}>Remember This One</button>
+          </>
+        )
       })
       setCurrentCards(latestCards)
     }
