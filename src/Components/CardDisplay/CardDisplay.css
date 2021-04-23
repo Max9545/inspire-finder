@@ -1,4 +1,9 @@
 .card-display-header {
   margin-left: 2vw;
   font-size: 1.7em;
+  /* border: solid 2px black; */
+  width: 60vw;
+  border-radius: 40px;
+  padding: 2%;
+  background-color: chartreuse;
 }

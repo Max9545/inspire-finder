@@ -12,7 +12,7 @@ function App() {
   // const [search, setSearch] = useState()
 
   useEffect(() => {
-searchQuotes('puppies')
+searchQuotes('cat')
 .then(data => console.log(data))
   },[])
 

@@ -6,6 +6,7 @@
 
 .quote {
   font-weight: bold;
+  font-size: 1.3em;
 }
 
 .author {
@@ -15,7 +16,12 @@
 
 .leadership-card {
   background-color: rgb(93, 58, 155);
+  color: rgb(137,223, 255);
 }
+
+/* .leadership-quote {
+  background-color: chocolate;
+} */
 
 .hope-card {
   background-color:rgb(230, 97, 0) ;
