@@ -1,10 +1,14 @@
-import './Form.css'
+// import './Form.css'
 
-function Form() {
-  return (
-    <p>Seraach</p>
-  )
-}
+// function Form() {
+//   return (
+//     <>  
+//       <form >
+        
+//       <form/>
+//     </>
+//   )
+// }
 
 
-export default Form
+// export default Form

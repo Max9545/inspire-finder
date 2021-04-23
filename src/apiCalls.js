@@ -7,14 +7,28 @@ export const fetchQuotes = quoteType => {
   })
   .then((response) => {
     if(!response.ok) {
-      throw Error(`Unable to ge those ${quoteType} quotes right now, refresh and try again later.`)
+      throw Error(`Unable to get those ${quoteType} quotes right now, refresh and try again later.`)
+    }
+    return response.json()
+  })
+}
+
+export const searchQuotes = topic => {
+  return fetch(`https://favqs.com/api/quotes/?filter=${topic}`, {
+    method: 'GET',
+    headers: {
+      'Authorization': 'Token 8bc7dfa7e20dffcf95c9191267966f40'    
+    }
+  })
+  .then((response) => {
+    if(!response.ok) {
+      throw Error(`Unable to get a quote about: "${topic}"  right now, refresh and try again later.`)
     }
     return response.json()
   })
 }
 
 
-
-
+//favqs.com/api/quotes/?filter=face
     // .then(res => res.json())
     // .then(data => setInspirational(data.quotes))

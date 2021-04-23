@@ -2,8 +2,9 @@ import './HomePage.css'
 import { ReactComponent as LeaderShip } from "../../Images/LeaderShip.svg";
 import { ReactComponent as Micropohone } from "../../Images/Microphone.svg";
 import Header from '../Header/Header.js'
-import Form from '../Form/Form.js'
+// import Form from '../Form/Form.js'
 import { Link } from 'react-router-dom'
+// import { searchQuotes } from '../../apiCalls.js'
 
 
 function HomePage() {
@@ -25,7 +26,7 @@ function HomePage() {
             <h2 className='laughs-title' data-cy='laughs-title'>Laughs<Micropohone className='microphone'/></h2>
           </Link>
         </section>
-        <Form/>
+        {/* <Form/> */}
         <Link to='/favorites' className='favorites-from-home' data-cy='favorites-from-home'>Remembrances</Link>
       </div>
   )

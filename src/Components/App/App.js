@@ -4,10 +4,17 @@ import CardDisplay from '../CardDisplay/CardDisplay.js'
 import { Route } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
 import FavoritesDiplay from '../FavoritesDisplay/FavoritesDisplay.js'
+import { searchQuotes } from '../../apiCalls.js'
 
 function App() {
 
   const [favorites, setFavorites] = useState([])
+  // const [search, setSearch] = useState()
+
+  useEffect(() => {
+searchQuotes('puppies')
+.then(data => console.log(data))
+  },[])
 
   const toggleFavorite = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
