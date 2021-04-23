@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { fetchQuotes } from '../../apiCalls'
 
 
-function CardDisplay({ quoteType, addToFavorites}) {
+function CardDisplay({ quoteType, toggleFavorite}) {
 
 
   const [currentCards, setCurrentCards] = useState()
@@ -29,9 +29,9 @@ function CardDisplay({ quoteType, addToFavorites}) {
                   quote={quote.body}
                   author={quote.author}
                   quoteType={quoteType}
-                  addToFavorites={addToFavorites}
+                  toggleFavorite={toggleFavorite}
                 />
-                <button onClick={() => addToFavorites({ id: quote.id, quote: quote.body, author: quote.author,  quoteType: quoteType})}>Remember This One</button>
+                {/* <button onClick={() => toggleFavorite({ id: quote.id, quote: quote.body, author: quote.author,  quoteType: quoteType})}>Remember This One</button> */}
           </>
         )
       })

@@ -2,7 +2,7 @@ import './FavoritesDisplay.css'
 import Card from '../Card/Card.js'
 import Header from '../Header/Header.js'
 
-function FavoritesDisplay({ favorites }) {
+function FavoritesDisplay({ favorites,  toggleFavorite }) {
 
   const favCards = favorites.map((quote) => {
     return (
@@ -13,6 +13,7 @@ function FavoritesDisplay({ favorites }) {
                   quote={quote.quote}
                   author={quote.author}
                   quoteType={quote.quoteType}
+                  toggleFavorite={toggleFavorite}
                 />
               </>
             )

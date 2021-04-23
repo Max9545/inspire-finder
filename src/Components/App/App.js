@@ -9,15 +9,19 @@ function App() {
 
   const [favorites, setFavorites] = useState([])
 
-  const addToFavorites = (newFavorite) => {
+  const toggleFavorite = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
-        favorites.push(newFavorite)
-        console.log(favorites)
-        setFavorites(favorites)
+        console.log('add')
+        // favorites.push(newFavorite)
+        // setFavorites(favorites)
         setFavorites([...favorites, newFavorite]) 
         //why does this not work? some kind of background prevention from the API?
-        console.log(favorites)
+      } else {
+        console.log('delete')
+       favorites.filter(favorite => favorite.id !== newFavorite.id)
+        setFavorites(favorites.filter(favorite => favorite.id !== newFavorite.id))
       }
+      console.log(favorites)
   }
 
 
@@ -27,11 +31,11 @@ function App() {
      
      
      <Route exact path='/' render={() => <HomePage/>}/>
-     <Route exact path='/hope' render={() => <CardDisplay quoteType='hope' addToFavorites={addToFavorites}/>}/>
-     <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' addToFavorites={addToFavorites}/>}/>
-     <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' addToFavorites={addToFavorites}/>}/>
-     <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' addToFavorites={addToFavorites}/>}/>
-     <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites}/>}/>
+     <Route exact path='/hope' render={() => <CardDisplay quoteType='hope' toggleFavorite={toggleFavorite}/>}/>
+     <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' toggleFavorite={toggleFavorite}/>}/>
+     <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' toggleFavorite={toggleFavorite}/>}/>
+     <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' toggleFavorite={toggleFavorite}/>}/>
+     <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites} toggleFavorite={toggleFavorite}/>}/>
     </div>
   );
 }
