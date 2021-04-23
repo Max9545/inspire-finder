@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <Link to='/' className='header-container' data-cy='header-container'>
-      <h1 className='header-title' data-cy='header-title' >Inspire<br/>Finder</h1>
-      <Inspiration className='app-logo'/>
-    </Link>
+    <div  className='header-container' data-cy='header-container'>
+      <Link className='title-to-home'to='/'>
+        <h1 className='header-title' data-cy='header-title' >Inspire<br/>Finder</h1>
+      </Link>
+      <Link to='/favorites'> 
+        <Inspiration className='app-logo'/>
+      </Link>
+    </div>
   )
 }
 
