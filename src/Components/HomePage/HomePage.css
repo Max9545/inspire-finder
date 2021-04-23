@@ -35,12 +35,12 @@
 .leadership {
   background-color: rgb(137,223, 255);
   background: linear-gradient(90deg, rgb(93, 58, 155) 25%, rgb(137,223, 255) 80%);
-
   display: flex;
   font-size: .6em;
   align-items: center;
   justify-content: center;
 }
+
 .leadership-logo {
   height: 3vh;
 }
@@ -61,7 +61,6 @@
 }
 
 .laughs {
-  /* background-color: rgb(153, 170, 171); */
   background: repeating-linear-gradient(
   45deg,
   rgb(153, 170, 171),
@@ -72,8 +71,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* align-content: center; */
 }
 
 .laughs-title {
@@ -87,10 +84,3 @@
   height: 2vh;
   width: 4vw;
 }
-/* .select-catagory {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
-  align-items: center;
-  margin: 2%;
-} */

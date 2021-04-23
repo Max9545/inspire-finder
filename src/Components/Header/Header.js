@@ -1,11 +1,13 @@
 import './Header.css'
+import { ReactComponent as  Inspiration } from "../../Images/Inspiration.svg";
+
 
 function Header() {
   return (
-    <>
-    <img src=''></img>
-      <h1 className='header-title' data-cy='header-title' >Inspire Finder</h1>
-    </>
+    <div className='header-container'>
+      <h1 className='header-title' data-cy='header-title' >Inspire<br/>Finder</h1>
+      <Inspiration className='app-logo'/>
+    </div>
   )
 }
 
