@@ -3,6 +3,7 @@ import './App.css';
 import CardDisplay from '../CardDisplay/CardDisplay.js'
 import { Route } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
+import FavoritesDiplay from '../FavoritesDisplay/FavoritesDisplay.js'
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
      <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' addToFavorites={addToFavorites}/>}/>
      <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' addToFavorites={addToFavorites}/>}/>
      <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' addToFavorites={addToFavorites}/>}/>
-     {/* <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites}/>}/> */}
+     <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites}/>}/>
     </div>
   );
 }

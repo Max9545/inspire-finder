@@ -1,0 +1,22 @@
+.label {
+  width: 30vw;
+  margin-right: 2vw;
+  font-size: .4em;
+}
+.leadership-label {
+  background-color: rgb(93, 58, 155);
+}
+.funny-label {
+  background-color: rgb(153, 170, 171);
+  /* background-color: black;
+  font-size: 3em; */
+}
+
+.inspirational-label {
+  background-color: rgb(186, 164, 226);
+ 
+}
+
+.hope-label {
+  background-color:rgb(230, 97, 0) ;
+}
