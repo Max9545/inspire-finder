@@ -20,3 +20,13 @@
 .hope-label {
   background-color:rgb(230, 97, 0) ;
 }
+
+.favorites-display-header {
+  margin: 1vh 0 0 2vw;
+  font-size: 1.6em;
+  /* border: solid 2px black; */
+  width: 90vw;
+  border-radius: 40px;
+  background-color: chartreuse;
+  padding: 1vh 3vw 1vh 4vw;
+}

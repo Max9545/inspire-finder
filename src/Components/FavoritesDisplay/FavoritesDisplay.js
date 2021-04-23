@@ -22,7 +22,7 @@ function FavoritesDisplay({ favorites,  toggleFavorite }) {
   return (
     <>
       <Header/>
-      <h3>Use These As Intent For Your Days</h3>
+      <h3 className='favorites-display-header' data-cy='favorites-display-header'>Use These As Intent For Your Days</h3>
       {!favorites.length && <p>No Favorites yet</p>}
       {favCards && favCards}
     </>
