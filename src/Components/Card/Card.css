@@ -1,7 +1,8 @@
 .card {
-  border: solid 2px black;
+  border: solid 5px black;
   margin: 1vh 1vw 2vh 2vw;
   padding: 0 2vw 1vh 2vw;
+  border-radius: 20px;
 }
 
 .quote {
