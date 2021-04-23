@@ -1,5 +1,6 @@
 import './CardDisplay.css'
 import Card from '../Card/Card.js'
+import Header from '../Header/Header.js'
 import { useEffect, useState } from 'react'
 import { fetchQuotes } from '../../apiCalls'
 
@@ -37,7 +38,8 @@ function CardDisplay({ quoteType, addToFavorites}) {
 
   return (
     <>
-    <p>{`${quoteType} quotes`}</p>
+    <Header/>
+    <p>{`Quotes In Regards To ${quoteType}`}</p>
       {currentCards && currentCards}
     </>
   )
