@@ -22,10 +22,9 @@ function HomePage() {
           </Link>
           <Link to='laughs' className='catagory laughs' data-cy='catagory-laughs'>
             <h2 className='laughs-title' data-cy='laughs-title'>Laughs<Micropohone className='microphone'/></h2>
-            
           </Link>
         </section>
-        <button>Favorites</button> 
+        <Link to='/favorites' className='favorites-from-home' data-cy='favorites-from-home'>Remembrances</Link>
       </div>
   )
 }

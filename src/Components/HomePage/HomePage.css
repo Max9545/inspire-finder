@@ -1,4 +1,7 @@
-
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
 
 .hope {
   background-image: url('../../Images/SunLogo.svg');
@@ -82,4 +85,17 @@
 .microphone {
   height: 2vh;
   width: 4vw;
+}
+
+.favorites-from-home {
+  border: solid 2px black;
+  background-color:rgb(93, 58, 155) ;
+  color: white;
+  padding: 3%;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.2em;
+  align-self: center;
+  border-radius: 30px;
 }
