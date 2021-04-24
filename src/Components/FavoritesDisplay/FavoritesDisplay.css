@@ -31,3 +31,14 @@
   padding: 1vh 3vw 1vh 4vw;
   text-align: center;
 }
+
+.no-favorites {
+  border: solid 5px black;
+  margin: 10vh 1vw 2vh 2vw;
+  padding: 2vh 2vw 2vh 2vw;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  background-color:rgb(230, 97, 0) ;
+}

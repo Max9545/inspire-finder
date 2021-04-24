@@ -23,7 +23,7 @@ function FavoritesDisplay({ favorites,  toggleFavorite }) {
     <>
       <Header/>
       <h3 className='favorites-display-header' data-cy='favorites-display-header'>Use These As Intent For Your Days</h3>
-      {!favorites.length && <p>No Favorites yet</p>}
+      {!favorites.length && <p className='no-favorites' data-cy='no-favorites'>No Favorites yet</p>}
       {favCards && favCards}
     </>
   )
