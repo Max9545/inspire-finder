@@ -59,14 +59,15 @@
 }
 
 .toggle-favorite {
+    font-family: "opendyslexic" !important;
     border: solid 2px black;
-    background-color:rgb(93, 58, 155) ;
-    color: white;
+    background-color:chartreuse ;
+    color: black;
+    /* width: 10vw; */
     padding: 3%;
     text-decoration: none;
-    color: whitesmoke;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: .7em;
     align-self: center;
     border-radius: 30px;
 }
