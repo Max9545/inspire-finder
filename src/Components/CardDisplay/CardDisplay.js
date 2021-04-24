@@ -35,6 +35,7 @@ function CardDisplay({ quoteType, toggleFavorite}) {
             </>
           )
         }
+
       })
       setCurrentCards(latestCards)
     }
