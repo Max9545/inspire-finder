@@ -11,10 +11,10 @@ function App() {
   const [favorites, setFavorites] = useState([])
   // const [search, setSearch] = useState()
 
-  useEffect(() => {
-searchQuotes('cat')
-.then(data => console.log(data))
-  },[])
+//   useEffect(() => {
+// searchQuotes('cat')
+// .then(data => console.log(data))
+//   },[])
 
   const toggleFavorite = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {

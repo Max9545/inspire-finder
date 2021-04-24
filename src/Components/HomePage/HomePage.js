@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 function HomePage() {
   return (
-      <div className='home-page'>
+      <div className='home-page' data-cy='home-page'>
         <Header/> 
         <section className='select-catagory' data-cy='select-catagory'>
           <Link to='/hope'className='catagory hope' data-cy='catagory-hope'>
