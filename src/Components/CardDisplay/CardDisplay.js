@@ -31,7 +31,6 @@ function CardDisplay({ quoteType, toggleFavorite}) {
                   quoteType={quoteType}
                   toggleFavorite={toggleFavorite}
                 />
-                {/* <button onClick={() => toggleFavorite({ id: quote.id, quote: quote.body, author: quote.author,  quoteType: quoteType})}>Remember This One</button> */}
           </>
         )
       })
