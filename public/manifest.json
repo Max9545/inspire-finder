@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Inspire Finder",
+  "name": "Remember Your Inspiration",
   "icons": [
     {
       "src": "favicon.ico",
