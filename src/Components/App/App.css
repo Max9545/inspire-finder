@@ -2,5 +2,8 @@
   min-height: 100vh;
   background-color: tan;
   font-family: "opendyslexic" !important;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
