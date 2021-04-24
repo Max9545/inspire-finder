@@ -21,18 +21,21 @@ function CardDisplay({ quoteType, toggleFavorite}) {
   useEffect(() => {
     if(quoteList) {
       const latestCards = quoteList.map((quote) => {
-        return (
-          <>
-            <Card
-                  key={quote.id}
-                  id={quote.id}
-                  quote={quote.body}
-                  author={quote.author}
-                  quoteType={quoteType}
-                  toggleFavorite={toggleFavorite}
-                />
-          </>
-        )
+        if(quote.body) {
+          return (
+            <>
+              <Card
+                    key={quote.id}
+                    id={quote.id}
+                    quote={quote.body}
+                    author={quote.author}
+                    quoteType={quoteType}
+                    toggleFavorite={toggleFavorite}
+                  />
+            </>
+          )
+        }
+        
       })
       setCurrentCards(latestCards)
     }
