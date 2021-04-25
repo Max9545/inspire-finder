@@ -3,6 +3,8 @@ context('Inspire Finder', () => {
     cy
     .intercept('https://favqs.com/api/quotes/?filter=hope&type=tag', { fixture:'hopeQuotes.json' })
     .intercept('https://favqs.com/api/quotes/?filter=leadership&type=tag', { fixture:'leadershipQuotes.json' })
+    .intercept('https://favqs.com/api/quotes/?filter=inspirational&type=tag', { fixture:'inspirationalQuotes.json' })
+    .intercept('https://favqs.com/api/quotes/?filter=funny&type=tag', { fixture:'funnyQuotes.json' })
     .visit('http://localhost:3000')
   })
 
@@ -41,7 +43,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it.only('Should have a Leadership Quotes Page that displays quotes', () => {
+  it('Should have a Leadership Quotes Page that displays quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=leadership-title]').should('exist')
     .should('contain', 'Leadership')
@@ -68,11 +70,11 @@ context('Inspire Finder', () => {
     .should('contain', 'inspirational Quotes')
     .get('[data-cy=card]').should('exist')
     .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', 'Half a century ago, the amazing courage of Rosa Parks, the visionary leadership of Martin Luther King, and the inspirational actions of the civil rights movement led politicians to write equality into the law and make real the promise of America for all her citizens.')
+    .get('[data-cy=author]').should('exist')
+    .should('contain', 'David Cameron')
+    .get('[data-cy=toggle-favorite]').should('exist')
+    .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
   it('Should have a Funny Quotes Page that displays quotes', () => {
@@ -85,11 +87,11 @@ context('Inspire Finder', () => {
     .should('contain', 'funny Quotes')
     .get('[data-cy=card]').should('exist')
     .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', "I've dealt with many crises in my life, but few will ever happen.")
+    .get('[data-cy=author]').should('exist')
+    .should('contain', 'Mark Twain')
+    .get('[data-cy=toggle-favorite]').should('exist')
+    .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
   it('Should have a Favorites Quotes Page that lets you know when you have no quotes', () => {
