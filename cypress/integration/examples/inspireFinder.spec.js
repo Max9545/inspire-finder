@@ -204,8 +204,10 @@ context('Inspire Finder', () => {
     .click()
     .get('[data-cy=favorites-display-header]')
     .should('exist')
-    // .should('contain', 'Use These As Intent For Your Days')
-    // .get('[data-cy=no-user-data]').should('exist')
+    .should('contain', 'Starting The Adventure...')
+    .get('[data-cy=no-user-data]').should('exist')
+    .should('contain', 'No Searched Quotes yet')
+    
     // .should('contain', 'No Favorites yet')
     // .get('[data-cy=quote]').should('exist')
     // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
