@@ -27,7 +27,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=catagory-laughs]').should('exist')
   })
 
-  it('Should have a Hope Quotes Page that displays quotes', () => {
+  it('Should have a Hope Quotes Page that displays hope quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=hope-title]').should('exist')
     .should('contain', 'Hope')
@@ -44,7 +44,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it('Should have a Leadership Quotes Page that displays quotes', () => {
+  it('Should have a Leadership Quotes Page that displays leadership quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=leadership-title]').should('exist')
     .should('contain', 'Leadership')
@@ -61,7 +61,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it('Should have a Inspirational Quotes Page that displays quotes', () => {
+  it('Should have a Inspirational Quotes Page that displays inspirational quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=inspirational-title]').should('exist')
     .should('contain', 'Inspirational')
@@ -78,7 +78,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it('Should have a Funny Quotes Page that displays quotes', () => {
+  it('Should have a Funny Quotes Page that displays funny quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=laughs-title]').should('exist')
     .should('contain', 'Laughs')
@@ -95,7 +95,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it('Should have a Favorites Quotes Page that lets you know when you have no quotes', () => {
+  it('Should have a Favorites Quotes Page that lets you know when you have no favorite quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=favorites-from-home]').should('exist')
     .should('contain', 'Remembrances')
@@ -222,7 +222,7 @@ context('Inspire Finder', () => {
   })
 
 
-  it('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
+  it('Should have a Searched Quotes Page that lets you know when you have no searched quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=home-to-searched]').should('exist')
     .should('contain', 'See Searched')
