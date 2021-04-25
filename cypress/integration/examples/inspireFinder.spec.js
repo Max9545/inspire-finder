@@ -5,6 +5,7 @@ context('Inspire Finder', () => {
     .intercept('https://favqs.com/api/quotes/?filter=leadership&type=tag', { fixture:'leadershipQuotes.json' })
     .intercept('https://favqs.com/api/quotes/?filter=inspirational&type=tag', { fixture:'inspirationalQuotes.json' })
     .intercept('https://favqs.com/api/quotes/?filter=funny&type=tag', { fixture:'funnyQuotes.json' })
+    .intercept('https://favqs.com/api/quotes/?filter=taco', { fixture:'searchedQuotes.json' })
     .visit('http://localhost:3000')
   })
 
@@ -111,7 +112,7 @@ context('Inspire Finder', () => {
     
   })
 
-  it.only('Should have a Favorites Quotes Page that displays quotes that have been favorited by a user on any other page', () => {
+  it('Should have a Favorites Quotes Page that displays quotes that have been favorited by a user on any other page', () => {
     cy
     .get('[data-cy=hope-title]').should('exist')
     .should('contain', 'Hope')
