@@ -14,8 +14,9 @@ function CardDisplay({ quoteType, toggleFavorite}) {
 
   useEffect(() => {
     fetchQuotes(quoteType)
-    // .then((data => console.log(data)))
+    // .then(data => console.log(data))
     .then(data => setQuoteList(data.quotes))
+
   },[])
 
 

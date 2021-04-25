@@ -1,7 +1,8 @@
 context('Inspire Finder', () => {
   beforeEach(() => {
     cy
-    // .intercept('https://favqs.com/api/quotes/?filter=hope&type=tag', { fixtures: 'hopeQuotes'})
+    .intercept('https://favqs.com/api/quotes/?filter=hope&type=tag', { fixture:'hopeQuotes.json' })
+    .intercept('https://favqs.com/api/quotes/?filter=leadership&type=tag', { fixture:'leadershipQuotes.json' })
     .visit('http://localhost:3000')
   })
 
@@ -40,7 +41,7 @@ context('Inspire Finder', () => {
     .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it('Should have a Leadership Quotes Page that displays quotes', () => {
+  it.only('Should have a Leadership Quotes Page that displays quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=leadership-title]').should('exist')
     .should('contain', 'Leadership')
@@ -50,11 +51,11 @@ context('Inspire Finder', () => {
     .should('contain', 'leadership Quotes')
     .get('[data-cy=card]').should('exist')
     .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', 'A leader is a dealer in hope.')
+    .get('[data-cy=author]').should('exist')
+    .should('contain', 'Napoleon Bonaparte')
+    .get('[data-cy=toggle-favorite]').should('exist')
+    .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
   it('Should have a Inspirational Quotes Page that displays quotes', () => {
@@ -99,7 +100,25 @@ context('Inspire Finder', () => {
     .get('[data-cy=favorites-display-header]')
     .should('exist')
     .should('contain', 'Use These As Intent For Your Days')
-    .get('[data-cy=no-favorites]').should('exist')
+    .get('[data-cy=no-user-data]').should('exist')
+    .should('contain', 'No Favorites yet')
+    // .get('[data-cy=quote]').should('exist')
+    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
+    // .get('[data-cy=author]').should('exist')
+    // .should('contain', 'Chuck Noland')
+    // .get('[data-cy=toggle-favorite]').should('exist')
+    // .should('contain', '( + ) Toggle Remembrance ( - )')
+  })
+
+  it('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
+    cy.get('[data-cy=select-catagory]').should('exist')
+    .get('[data-cy=favorites-from-home]').should('exist')
+    .should('contain', 'Remembrances')
+    .click()
+    .get('[data-cy=favorites-display-header]')
+    .should('exist')
+    .should('contain', 'Use These As Intent For Your Days')
+    .get('[data-cy=no-user-data]').should('exist')
     .should('contain', 'No Favorites yet')
     // .get('[data-cy=quote]').should('exist')
     // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
