@@ -9,6 +9,7 @@ export const fetchQuotes = quoteType => {
     if(!response.ok) {
       throw Error(`Unable to get those ${quoteType} quotes right now, refresh and try again later.`)
     }
+    console.log(response)
     return response.json()
   })
 }

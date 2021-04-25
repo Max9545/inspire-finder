@@ -1,7 +1,7 @@
 context('Inspire Finder', () => {
   beforeEach(() => {
     cy
-    // .intercept('https://favqs.com/api/quotes/?filter=hope&type=tag', { fixtures: 'hopeQuotes.json'})
+    // .intercept('https://favqs.com/api/quotes/?filter=hope&type=tag', { fixtures: 'hopeQuotes'})
     .visit('http://localhost:3000')
   })
 
@@ -91,7 +91,7 @@ context('Inspire Finder', () => {
     // .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
-  it.only('Should have a Funny Quotes Page that displays quotes', () => {
+  it('Should have a Favorites Quotes Page that lets you know when you have no quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=favorites-from-home]').should('exist')
     .should('contain', 'Remembrances')
@@ -99,7 +99,8 @@ context('Inspire Finder', () => {
     .get('[data-cy=favorites-display-header]')
     .should('exist')
     .should('contain', 'Use These As Intent For Your Days')
-    // .get('[data-cy=card]').should('exist')
+    .get('[data-cy=no-favorites]').should('exist')
+    .should('contain', 'No Favorites yet')
     // .get('[data-cy=quote]').should('exist')
     // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
     // .get('[data-cy=author]').should('exist')

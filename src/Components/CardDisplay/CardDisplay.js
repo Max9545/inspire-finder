@@ -26,7 +26,7 @@ function CardDisplay({ quoteType, toggleFavorite}) {
           return (
             <>
               <Card
-                    key={quote.id}
+                    key={Date.now()}
                     id={quote.id}
                     quote={quote.body}
                     author={quote.author}
@@ -47,7 +47,7 @@ function CardDisplay({ quoteType, toggleFavorite}) {
   return (
     <>
     <Header/>
-    <h3 className={`card-display-header ${quoteType}`} data-cy='card-display-header'>{`${quoteType} Quotes`}</h3>
+    <h3 className='card-display-header' data-cy='card-display-header'>{`${quoteType} Quotes`}</h3>
       {currentCards && currentCards}
     </>
   )
