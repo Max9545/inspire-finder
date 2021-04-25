@@ -108,11 +108,10 @@ context('Inspire Finder', () => {
     // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
     // .get('[data-cy=author]').should('exist')
     // .should('contain', 'Chuck Noland')
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
+    
   })
 
-  it('Should have a Favorites Quotes Page that dipsplays quotes that have been favorited by a user', () => {
+  it('Should have a Favorites Quotes Page that dipsplays quotes that have been favorited by a user on any other page', () => {
     cy
     .get('[data-cy=hope-title]').should('exist')
     .should('contain', 'Hope')
@@ -168,8 +167,6 @@ context('Inspire Finder', () => {
     .should('contain', "I've dealt with many crises in my life, but few will ever happen.")
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Mark Twain')
-    
-  
   })
 
   it.only('Should have the option to remove a quote from the favorites page', () => {
@@ -192,8 +189,11 @@ context('Inspire Finder', () => {
     .should('contain', "I've dealt with many crises in my life, but few will ever happen.")
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Mark Twain')
-    
-  
+    .get('[data-cy=toggle-favorite]').should('exist')
+    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .click()
+    .get('[data-cy=no-user-data]').should('exist')
+    .should('contain', 'No Favorites yet')  
   })
 
 
