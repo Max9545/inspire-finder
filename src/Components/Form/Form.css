@@ -8,6 +8,10 @@
   font-size: 1.2em;
   align-self: center;
   border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1vh 2vw 1vh 2vw;
+  
 }
 
 .search-input {
@@ -20,6 +24,7 @@
 }
 
 .search-button {
+  font-family: "opendyslexic" !important;
   border: solid 2px black;
   padding: 3%;
   text-decoration: none;
