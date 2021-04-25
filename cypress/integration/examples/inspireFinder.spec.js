@@ -197,7 +197,7 @@ context('Inspire Finder', () => {
   })
 
 
-  it.only('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
+  it('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=home-to-searched]').should('exist')
     .should('contain', 'See Searched')
@@ -209,28 +209,24 @@ context('Inspire Finder', () => {
     .should('contain', 'No Searched Quotes yet')
     
     // .should('contain', 'No Favorites yet')
-    // .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
+   
+    
     // .get('[data-cy=toggle-favorite]').should('exist')
     // .should('contain', '( + ) Toggle Remembrance ( - )')
   })
-  it("Should have a Searched Quotes Page that dipslays quotes on a topic of the user's choice", () => {
-    cy.get('[data-cy=select-catagory]').should('exist')
-    .get('[data-cy=favorites-from-home]').should('exist')
-    .should('contain', 'Remembrances')
+
+  it.only("Should have a Searched Quotes Page that displays quotes on a topic of the user's choice", () => {
+    cy.get('[data-cy=search-form]').should('exist')
+    .should('contain', 'Search Any Topic')
+    .get('[data-cy=search-input]').should('exist')
+    .type('taco')
+    .get('[data-cy=search-button]').should('exist')
     .click()
-    .get('[data-cy=favorites-display-header]')
-    .should('exist')
-    .should('contain', 'Use These As Intent For Your Days')
-    .get('[data-cy=no-user-data]').should('exist')
-    .should('contain', 'No Favorites yet')
-    // .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
+    .get('[data-cy=home-to-searched]').should('exist')
+    .click()
+     .get('[data-cy=quote]').should('exist')
+    .should('contain', "I'm famous for splurging at fast-food places. I'm currently obsessed with Taco Bell's bean and cheese burritos with extra green sauce and extra cheese. Gluttony!")
+    .get('[data-cy=author]').should('exist')
+    .should('contain', 'Fergie')
   })
 })
