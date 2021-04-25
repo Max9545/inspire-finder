@@ -111,7 +111,7 @@ context('Inspire Finder', () => {
     
   })
 
-  it.only('Should have a Favorites Quotes Page that dipsplays quotes that have been favorited by a user on any other page', () => {
+  it.only('Should have a Favorites Quotes Page that displays quotes that have been favorited by a user on any other page', () => {
     cy
     .get('[data-cy=hope-title]').should('exist')
     .should('contain', 'Hope')
@@ -139,6 +139,17 @@ context('Inspire Finder', () => {
     .click()
     .get('[data-cy=laughs-title]').should('exist')
     .should('contain', 'Laughs')
+    .click()
+    .get('[data-cy=card]').first()
+    .get('[data-cy=toggle-favorite]')
+    .first().click()
+    .get('.title-to-home')
+    .click()
+    .get('[data-cy=search-input]').should('exist')
+    .type('taco')
+    .get('[data-cy=search-button]').should('exist')
+    .click()
+    .get('[data-cy=home-to-searched]').should('exist')
     .click()
     .get('[data-cy=card]').first()
     .get('[data-cy=toggle-favorite]')
@@ -179,6 +190,12 @@ context('Inspire Finder', () => {
     .should('contain', "I've dealt with many crises in my life, but few will ever happen.")
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Mark Twain')
+    .get('[data-cy=label]').should('exist')
+    .should('contain', 'searched quote')
+    .get('[data-cy=quote]').should('exist')
+    .should('contain', "I'm famous for splurging at fast-food places. I'm currently obsessed with Taco Bell's bean and cheese burritos with extra green sauce and extra cheese. Gluttony!")
+    .get('[data-cy=author]').should('exist')
+    .should('contain', 'Fergie')
   })
 
   it('Should have the option to remove a quote from the favorites page', () => {
