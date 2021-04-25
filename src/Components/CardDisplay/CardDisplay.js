@@ -14,6 +14,7 @@ function CardDisplay({ quoteType, toggleFavorite}) {
 
   useEffect(() => {
     fetchQuotes(quoteType)
+    // .then((data => console.log(data)))
     .then(data => setQuoteList(data.quotes))
   },[])
 
@@ -46,7 +47,7 @@ function CardDisplay({ quoteType, toggleFavorite}) {
   return (
     <>
     <Header/>
-    <h3 className='card-display-header ${quoteType}' data-cy='card-display-header'>{`${quoteType} Quotes`}</h3>
+    <h3 className={`card-display-header ${quoteType}`} data-cy='card-display-header'>{`${quoteType} Quotes`}</h3>
       {currentCards && currentCards}
     </>
   )
