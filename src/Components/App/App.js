@@ -4,12 +4,12 @@ import CardDisplay from '../CardDisplay/CardDisplay.js'
 import { Route } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
 import FavoritesDiplay from '../FavoritesDisplay/FavoritesDisplay.js'
-import { searchQuotes } from '../../apiCalls.js'
+
 
 function App() {
 
   const [favorites, setFavorites] = useState([])
-  // const [search, setSearch] = useState()
+  const [searchList, setSearchList] = useState()
 
 //   useEffect(() => {
 // searchQuotes('cat')
@@ -35,12 +35,12 @@ function App() {
   return (
     <div className='app'>
      
-     
-     <Route exact path='/' render={() => <HomePage/>}/>
+     <Route exact path='/' render={() => <HomePage setSearchList={setSearchList}/>}/>
      <Route exact path='/hope' render={() => <CardDisplay quoteType='hope' toggleFavorite={toggleFavorite}/>}/>
      <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' toggleFavorite={toggleFavorite}/>}/>
      <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' toggleFavorite={toggleFavorite}/>}/>
      <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' toggleFavorite={toggleFavorite}/>}/>
+     {/* <Route exact path='/searched' render={() => <CardDisplay quoteType='searched' toggleFavorite={toggleFavorite}/>}/> */}
      <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites} toggleFavorite={toggleFavorite}/>}/>
     </div>
   );
