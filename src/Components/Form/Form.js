@@ -32,5 +32,4 @@ function Form({ setSearchList }) {
   )
 }
 
-
 export default Form

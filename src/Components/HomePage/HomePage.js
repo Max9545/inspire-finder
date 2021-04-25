@@ -4,8 +4,6 @@ import { ReactComponent as Micropohone } from "../../Images/Microphone.svg";
 import Header from '../Header/Header.js'
 import Form from '../Form/Form.js'
 import { Link } from 'react-router-dom'
-// import { searchQuotes } from '../../apiCalls.js'
-
 
 function HomePage({ setSearchList }) {
   return (

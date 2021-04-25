@@ -105,11 +105,6 @@ context('Inspire Finder', () => {
     .should('contain', 'Use These As Intent For Your Days')
     .get('[data-cy=no-user-data]').should('exist')
     .should('contain', 'No Favorites yet')
-    // .get('[data-cy=quote]').should('exist')
-    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
-    // .get('[data-cy=author]').should('exist')
-    // .should('contain', 'Chuck Noland')
-    
   })
 
   it('Should have a Favorites Quotes Page that displays quotes that have been favorited by a user on any other page', () => {
@@ -237,12 +232,6 @@ context('Inspire Finder', () => {
     .should('contain', 'Starting The Adventure...')
     .get('[data-cy=no-user-data]').should('exist')
     .should('contain', 'No Searched Quotes yet')
-    
-    // .should('contain', 'No Favorites yet')
-   
-    
-    // .get('[data-cy=toggle-favorite]').should('exist')
-    // .should('contain', '( + ) Toggle Remembrance ( - )')
   })
 
   it("Should have a Searched Quotes Page that displays quotes on a topic of the user's choice", () => {

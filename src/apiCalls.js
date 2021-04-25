@@ -28,7 +28,3 @@ export const searchQuotes = topic => {
   })
 }
 
-
-//favqs.com/api/quotes/?filter=face
-    // .then(res => res.json())
-    // .then(data => setInspirational(data.quotes))

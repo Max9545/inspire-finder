@@ -11,21 +11,15 @@ function App() {
   const [favorites, setFavorites] = useState([])
   const [searchList, setSearchList] = useState([])
 
-//   useEffect(() => {
-// searchQuotes('cat')
-// .then(data => console.log(data))
-//   },[])
-
   const toggleFavorite = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
-        console.log('add')
+
         // favorites.push(newFavorite)
         // setFavorites(favorites)
         setFavorites([...favorites, newFavorite]) 
         //why does this not work? some kind of background prevention from the API?
       } else {
-        console.log('delete')
-       favorites.filter(favorite => favorite.id !== newFavorite.id)
+        favorites.filter(favorite => favorite.id !== newFavorite.id)
         setFavorites(favorites.filter(favorite => favorite.id !== newFavorite.id))
       }
   }
