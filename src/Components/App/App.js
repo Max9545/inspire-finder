@@ -3,7 +3,7 @@ import './App.css';
 import CardDisplay from '../CardDisplay/CardDisplay.js'
 import { Route } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
-import FavoritesDiplay from '../FavoritesDisplay/FavoritesDisplay.js'
+import UserLedDisplay from '../UserLedDisplay/UserLedDisplay.js'
 
 
 function App() {
@@ -40,8 +40,8 @@ function App() {
      <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' toggleFavorite={toggleFavorite}/>}/>
      <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' toggleFavorite={toggleFavorite}/>}/>
      <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' toggleFavorite={toggleFavorite}/>}/>
-     {/* <Route exact path='/searched' render={() => <CardDisplay quoteType='searched' toggleFavorite={toggleFavorite}/>}/> */}
-     <Route exact path='/favorites' render={() => <FavoritesDiplay favorites={favorites} toggleFavorite={toggleFavorite}/>}/>
+     <Route exact path='/searched' render={() => <UserLedDisplay quoteList={searchList} toggleFavorite={toggleFavorite} type='searched'/>}/>
+     <Route exact path='/favorites' render={() => <UserLedDisplay quoteList={favorites} toggleFavorite={toggleFavorite} type='favorites'/>}/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .label {
-  width: 35vw;
+  width: 50vw;
   font-size: .9em;
-  padding-left: 3vw;
+  /* padding: 1vh 2vw 1vh 1vw; */
   border-top-right-radius: 50px;
   text-align: center;
   font-weight: bold;
@@ -24,6 +24,10 @@
   background-color:rgb(230, 97, 0) ;
 }
 
+.searched-label {
+  background-color: blanchedalmond;
+}
+
 .favorites-display-header {
   margin: 1vh 2vw 0 2vw;
   align-self: center;
@@ -35,7 +39,7 @@
   text-align: center;
 }
 
-.no-favorites {
+.no-user-data {
   border: solid 5px black;
   margin: 10vh 5vw 2vh 5vw;
   padding: 2vh 2vw 2vh 2vw;
