@@ -27,8 +27,10 @@ function HomePage({ setSearchList }) {
           </Link>
         </section>
         <Form setSearchList={setSearchList}/>
-        <Link to='searched' className='home-to-searched' data-cy='home-to-searched'>See Searched</Link>
-        <Link to='/favorites' className='favorites-from-home' data-cy='favorites-from-home'>Remembrances</Link>
+        <section className='user-led-nav'>
+          <Link to='searched' className='home-to-searched' data-cy='home-to-searched'>See Searched</Link>
+          <Link to='/favorites' className='favorites-from-home' data-cy='favorites-from-home'>Remembrances</Link>
+        </section>
       </div>
   )
 }
