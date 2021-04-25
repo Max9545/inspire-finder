@@ -8,13 +8,13 @@ context('Inspire Finder', () => {
     .visit('http://localhost:3000')
   })
 
-  it('Should have a Header', () => {
+  it.only('Should have a Header', () => {
     cy.get('[data-cy=home-page]').should('exist')
     .get('[data-cy=header-container]').should('exist')
     .get('.title-to-home').should('exist')
-    // .get('[data-cy=header-title]').should('exist')    
-    // .get('[data-cy=header-title]')
-    // .should('contain', 'Inspire Finder')
+    .get('[data-cy=header-title]').should('exist')    
+    .should('contain', 'Inspire')
+    .should('contain', 'Finder')
   })
 
   it('Should have a Home Page', () => {
