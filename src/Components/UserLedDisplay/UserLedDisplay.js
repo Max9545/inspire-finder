@@ -8,7 +8,7 @@ function FavoritesDisplay({ quoteList,  toggleFavorite, type }) {
   const favCards = quoteList.map((quote) => {
     return (
             <>
-                <p className={`label ${quote.quoteType? quote.quoteType : 'searched'}-label`}>{`${quote.quoteType ? quote.quoteType : 'searched'} quote`}</p>
+                <p className={`label ${quote.quoteType? quote.quoteType : 'searched'}-label`} data-cy='label'>{`${quote.quoteType ? quote.quoteType : 'searched'} quote`}</p>
                 <Card
                   id={quote.id}
                   quote={quote.quote ? quote.quote : quote.body}
