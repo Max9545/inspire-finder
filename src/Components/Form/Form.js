@@ -14,16 +14,19 @@ function Form({ setSearchList }) {
 
   return (
     <>  
-      <form onSubmit={handleSubmit}>
+      <form className='search-form' data-cy='search-form'onSubmit={handleSubmit}>
         <label>
           Search Any Topic
           <input
+            className='search-input'
+            data-cy='search-input'
             type='text'
+            name='Search Any Topic'
             value={topic}
             onChange={e => setTopic(e.target.value)}
           />
         </label>
-        <input type='submit' value='submit' />
+        <input className='search-button' data-cy='search-button'type='submit' value='submit' />
       </form>
     </>
   )
