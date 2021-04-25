@@ -9,7 +9,7 @@ import UserLedDisplay from '../UserLedDisplay/UserLedDisplay.js'
 function App() {
 
   const [favorites, setFavorites] = useState([])
-  const [searchList, setSearchList] = useState()
+  const [searchList, setSearchList] = useState([])
 
 //   useEffect(() => {
 // searchQuotes('cat')

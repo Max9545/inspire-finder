@@ -169,7 +169,7 @@ context('Inspire Finder', () => {
     .should('contain', 'Mark Twain')
   })
 
-  it.only('Should have the option to remove a quote from the favorites page', () => {
+  it('Should have the option to remove a quote from the favorites page', () => {
     cy
     .get('[data-cy=laughs-title]').should('exist')
     .should('contain', 'Laughs')
@@ -197,7 +197,24 @@ context('Inspire Finder', () => {
   })
 
 
-  it('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
+  it.only('Should have a Searched Quotes Page that lets you know when you have no quotes', () => {
+    cy.get('[data-cy=select-catagory]').should('exist')
+    .get('[data-cy=home-to-searched]').should('exist')
+    .should('contain', 'See Searched')
+    .click()
+    .get('[data-cy=favorites-display-header]')
+    .should('exist')
+    // .should('contain', 'Use These As Intent For Your Days')
+    // .get('[data-cy=no-user-data]').should('exist')
+    // .should('contain', 'No Favorites yet')
+    // .get('[data-cy=quote]').should('exist')
+    // .should('contain', 'Because tomorrow, the sun will rise. Who knows what the tide may bring.')
+    // .get('[data-cy=author]').should('exist')
+    // .should('contain', 'Chuck Noland')
+    // .get('[data-cy=toggle-favorite]').should('exist')
+    // .should('contain', '( + ) Toggle Remembrance ( - )')
+  })
+  it("Should have a Searched Quotes Page that dipslays quotes on a topic of the user's choice", () => {
     cy.get('[data-cy=select-catagory]').should('exist')
     .get('[data-cy=favorites-from-home]').should('exist')
     .should('contain', 'Remembrances')
