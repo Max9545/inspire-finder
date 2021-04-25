@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css';
 import CardDisplay from '../CardDisplay/CardDisplay.js'
 import { Route } from 'react-router-dom'
@@ -13,7 +13,6 @@ function App() {
 
   const toggleFavorite = (newFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
-
         // favorites.push(newFavorite)
         // setFavorites(favorites)
         setFavorites([...favorites, newFavorite]) 
@@ -37,7 +36,9 @@ function App() {
      <Route exact path='/searched' render={() => <UserLedDisplay quoteList={searchList} toggleFavorite={toggleFavorite} type='searched'/>}/>
      <Route exact path='/favorites' render={() => <UserLedDisplay quoteList={favorites} toggleFavorite={toggleFavorite} type='favorites'/>}/>
     </div>
-  );
+  )
 }
 
 export default App;
+
+

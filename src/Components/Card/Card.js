@@ -1,4 +1,6 @@
 import './Card.css'
+import PropTypes from 'prop-types';
+
 
 function Card({ quote, author, toggleFavorite, id, quoteType }) {
   return (
@@ -11,3 +13,11 @@ function Card({ quote, author, toggleFavorite, id, quoteType }) {
 }
 
 export default Card
+
+Card.propTypes = {
+  quote: PropTypes.string,
+  author: PropTypes.string,
+  toggleFavorite: PropTypes.func,
+  id: PropTypes.number,
+  quoteType: PropTypes.string,
+}

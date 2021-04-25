@@ -1,6 +1,7 @@
 import './Form.css'
 import { useState } from 'react'
 import { searchQuotes } from '../../apiCalls.js'
+import PropTypes from 'prop-types';
 
 function Form({ setSearchList }) {
 
@@ -33,3 +34,7 @@ function Form({ setSearchList }) {
 }
 
 export default Form
+
+Form.propTypes = {
+  setSearchList: PropTypes.func,
+}

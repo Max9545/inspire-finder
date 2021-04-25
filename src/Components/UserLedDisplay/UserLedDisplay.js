@@ -1,7 +1,7 @@
 import './UserLedDisplay.css'
 import Card from '../Card/Card.js'
 import Header from '../Header/Header.js'
-import { Router } from 'react-router'
+import PropTypes from 'prop-types';
 
 function FavoritesDisplay({ quoteList,  toggleFavorite, type }) {
 
@@ -33,3 +33,9 @@ function FavoritesDisplay({ quoteList,  toggleFavorite, type }) {
 }
 
 export default FavoritesDisplay
+
+FavoritesDisplay.propTypes = {
+  quoteList: PropTypes.array,
+  toggleFavorite: PropTypes.func,
+  type: PropTypes.string,
+}

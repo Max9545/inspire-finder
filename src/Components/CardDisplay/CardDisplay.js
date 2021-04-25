@@ -3,9 +3,9 @@ import Card from '../Card/Card.js'
 import Header from '../Header/Header.js'
 import { useEffect, useState } from 'react'
 import { fetchQuotes } from '../../apiCalls'
+import PropTypes from 'prop-types';
 
-
-function CardDisplay({ quoteType, toggleFavorite}) {
+function CardDisplay({ quoteType, toggleFavorite }) {
 
 
   const [currentCards, setCurrentCards] = useState()
@@ -52,3 +52,9 @@ function CardDisplay({ quoteType, toggleFavorite}) {
 
 
 export default CardDisplay
+
+
+CardDisplay.propTypes = {
+  quoteType: PropTypes.string,
+  toggleFavorite: PropTypes.func
+}
