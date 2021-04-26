@@ -79,7 +79,16 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 
 ## Functionality
 
-#### Home Page
+#### Hope Page
+![Site Use](https://media.giphy.com/media/Nu99wE2nocJwQ1NyMf/giphy.gif)
+
+#### Leadership Page
+![Site Use]()
+
+#### Inspirational Page
+![Site Use]()
+
+#### Laughs Page
 ![Site Use]()
 
 #### Can choose a topic and see the subsequent quotes 
