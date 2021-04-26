@@ -53,7 +53,7 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 - Run `npm install`
 - Run `npm start`
 - visit http://localhost:3000/
-- will need a FavQ's api key
+- will need a FavQ's Authorization  Token
 
 ## Learning Goals
 
@@ -89,7 +89,7 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 ![Site Use of Inspirational Page](https://media.giphy.com/media/XTObAS1k9gRc4KgYxY/giphy.gif)
 
 #### Laughs Page
-![Site Use of Laughs Page]()
+![Site Use of Laughs Page](https://media.giphy.com/media/VwEgntWUr8WjjMUmgI/giphy.gif)
 
 #### Searched Page
 ![Site Use of Searched Page]()
