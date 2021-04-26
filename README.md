@@ -58,7 +58,7 @@ visit deployed site [here](https://inspire-finder.herokuapp.com)
     {
     method: 'GET',
     headers: {
-      'Authorization': 'Token <Your FavQ API Token here>'    
+      'Authorization': 'Token <Your FavQ's API Token here>'    
     }
 ```
 
