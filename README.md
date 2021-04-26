@@ -91,13 +91,13 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 #### Laughs Page
 ![Site Use of Laughs Page](https://media.giphy.com/media/VwEgntWUr8WjjMUmgI/giphy.gif)
 
-#### Favorites Page
+#### Favorites Page (Can choose and see favorites)
 ![Site Use of Favorites Page](https://media.giphy.com/media/fgkfwAJAzKPvLOfbmR/giphy.gif)
 
 #### Can choose a topic and see the subsequent quotes 
-![Site Use of Searched Quotes Page]()
+![Site Use of Searched Quotes Page](https://media.giphy.com/media/KYagOGBdL2ywTmFpeO/giphy.gif)
 
-#### Can choose and see favorites
+#### 
 ![Site Use]()
 
 ## Contributers
