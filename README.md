@@ -18,16 +18,17 @@
 
 ## About The Project
 
-This project utilizes Create React App to build an application which allows users to see lists of quotes on the topics of Hope, Leadership, Inspiration, Comedy, or any topic of the user's choosing. Throughout the project, learning goals included:
+This project used Create-React-App to build an application which allows users to see lists of quotes on the topics of Hope, Leadership, Inspiration, Comedy, or any topic of the user's choosing. Quotes can be saved to viewe later and are sorted by styles and colors. Throughout the project, learning goals included:
 
 - Architect an application structure using functional components and hooks
-- Solidify competency with React fundamentals and state management 
-- Working with React components & asynchronous JS using Cypress testing
+- Solidify competency with React fundamentals and state management
+- Effiecient time managenemnt on solo made app 
+- Working with React Hooks & asynchronous JS using Cypress testing
 - Create a multi-page UX using Router
 - Using the FavQ's API.
 - Deployment using Heroku
 
-- [Deployed app](https://inspire-finder.herokuapp.com/favorites)
+- [Deployed app](https://inspire-finder.herokuapp.com)
 - [Project Brief and Rubric](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
 
@@ -35,7 +36,7 @@ This project utilizes Create React App to build an application which allows user
 
 - React
 - React Router
-- Javascript
+- ES6
 - HTML5
 - CSS
 - Cypress
@@ -44,30 +45,22 @@ This project utilizes Create React App to build an application which allows user
 
 ## Set-up Instructions
 
-visit deployed site [here]()
+visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 
-1. Additionally you can clone down the repo [here](https://github.com/Max9545/gallery-time)
+1. Additionally you can clone down the repo [here](https://github.com/Max9545/inspire-finder)
 2. Move into the gallery-time directory in your terminal.
 3. To see the code itself locally, run `<name of text editor> .`
 - Run `npm install`
 - Run `npm start`
 - visit http://localhost:3000/
-- will need a google api key
-- make .env file in root directory and paste this in there:
-- REACT_APP_API_KEY=Your_KEY_HERE
-- Torun Cypress testing add cypress.json needs this:
-{
-  "env": {
-    "API_KEY": "process.env.REACT_APP_API_KEY"
-  }
-}
+- will need a FavQ's api key
 
 ## Learning Goals
 
 - Deeper understanding of React fundamentals including components, props, state, JSX, hooks.
-- E2E (end to end) testing using Cypress
+- End to End testing using Cypress
 - Refactoring an application to utilize React Router
-- Deploying an application
+- Deploying an application on Heroku
 - Utilize PWA to run application offline.
 
 
@@ -75,9 +68,7 @@ visit deployed site [here]()
 
 1. Planning: intentionally planning an overall strategy before writing code. This included component structures and state if applicable
 2. Using Cypress testing, to implement E2E testing and throughly test all user flows including stubbing api calls
-3. Using the Google Api with CORS and keys.
-4. Implement PWA features. Service worker and cache.  
-
+3. Using the FavQ's Api with an Authorization Token.
 
 ## Wins
 
@@ -86,20 +77,16 @@ visit deployed site [here]()
 3. Mobile first design.
 4. Dynamic rendering of components on multiple levels 
 
-
 ## Functionality
-
 
 #### Home Page
 ![Site Use]()
-
 
 #### Can choose a topic and see the subsequent quotes 
 ![Site Use]()
 
 #### Can choose and see favorites
 ![Site Use]()
-
 
 ## Contributers
 
