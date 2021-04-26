@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+## Contact  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://www.linkedin.com/in/max-bregman-216063203/) [![GitHub](https://img.shields.io/badge/GitHub-black.svg?&style=flat-square&logo=github&logoColor=white)](https://github.com/Max9545) - Max Bregman
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Set-up Instructions](#set-up-instructions)
+- [Learning Goals](#learning-goals)
+- [Challenges](#challenges)
+- [Wins](#wins)
+- [Functionality](#functionality)
+- [Future Iterations](#future-iterations)
+- [Contributors](#contributors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+This project utilizes Create React App to build an application which allows users to see lists of quotes on the topics of Hope, Leadership, Inspiration, Comedy, or any topic of the user's choosing. Throughout the project, learning goals included:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Architect an application structure using functional components and hooks
+- Solidify competency with React fundamentals and state management 
+- Working with React components & asynchronous JS using Cypress testing
+- Create a multi-page UX using Router
+- Using the FavQ's API.
+- Deployment using Heroku
 
-### `npm run build`
+- [Deployed app](https://inspire-finder.herokuapp.com/favorites)
+- [Project Brief and Rubric](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Built With:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- React Router
+- Javascript
+- HTML5
+- CSS
+- Cypress
+- FavQ's api
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Set-up Instructions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+visit deployed site [here]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Additionally you can clone down the repo [here](https://github.com/Max9545/gallery-time)
+2. Move into the gallery-time directory in your terminal.
+3. To see the code itself locally, run `<name of text editor> .`
+- Run `npm install`
+- Run `npm start`
+- visit http://localhost:3000/
+- will need a google api key
+- make .env file in root directory and paste this in there:
+- REACT_APP_API_KEY=Your_KEY_HERE
+- Torun Cypress testing add cypress.json needs this:
+{
+  "env": {
+    "API_KEY": "process.env.REACT_APP_API_KEY"
+  }
+}
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Learning Goals
 
-## Learn More
+- Deeper understanding of React fundamentals including components, props, state, JSX, hooks.
+- E2E (end to end) testing using Cypress
+- Refactoring an application to utilize React Router
+- Deploying an application
+- Utilize PWA to run application offline.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Challenges
 
-### Code Splitting
+1. Planning: intentionally planning an overall strategy before writing code. This included component structures and state if applicable
+2. Using Cypress testing, to implement E2E testing and throughly test all user flows including stubbing api calls
+3. Using the Google Api with CORS and keys.
+4. Implement PWA features. Service worker and cache.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Wins
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Implementing the MVP in a timely and efficient manner
+2. Improvement of Cypress testing methodologies 
+3. Mobile first design.
+4. Dynamic rendering of components on multiple levels 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Functionality
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Home Page
+![Site Use]()
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Can choose a topic and see the subsequent quotes 
+![Site Use]()
 
-### `npm run build` fails to minify
+#### Can choose and see favorites
+![Site Use]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Contributers
+
+* [Max Bregman](https://github.com/Max9545) - Application Creator
+* [Leta](https://github.com/letakeane) - Project Manager
+* [Scott Ertmer](https://github.com/sertmer) - Project Manager
