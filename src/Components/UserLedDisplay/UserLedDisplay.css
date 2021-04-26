@@ -1,0 +1,51 @@
+.label {
+  width: 50vw;
+  font-size: .9em;
+  /* padding: 1vh 2vw 1vh 1vw; */
+  border-top-right-radius: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.leadership-label {
+  background-color: rgb(93, 58, 155);
+}
+.funny-label {
+  background-color: rgb(153, 170, 171);
+  /* background-color: black;
+  font-size: 3em; */
+}
+
+.inspirational-label {
+  background-color: rgb(186, 164, 226);
+ 
+}
+
+.hope-label {
+  background-color:rgb(230, 97, 0) ;
+}
+
+.searched-label {
+  background-color: blanchedalmond;
+}
+
+.favorites-display-header {
+  margin: 1vh 2vw 0 2vw;
+  align-self: center;
+  font-size: 1.4em;
+  width: 90vw;
+  border-radius: 40px;
+  background-color: chartreuse;
+  padding: 1vh 3vw 1vh 3vw;
+  text-align: center;
+}
+
+.no-user-data {
+  border: solid 5px black;
+  margin: 10vh 5vw 2vh 5vw;
+  padding: 2vh 2vw 2vh 2vw;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3em;
+  background-color:rgb(230, 97, 0) ;
+}

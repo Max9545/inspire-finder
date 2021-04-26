@@ -1,0 +1,123 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.hope {
+  background-image: url('../../Images/SunLogo.svg');
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: contain;
+  background-color: rgb(230, 97, 0);
+}
+
+.hope-title {
+  margin: 0;
+  align-self: center;
+  padding: 0;
+}
+
+.catagory {
+  height: 18vh;
+  width: 36vw;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 3vh 0 3vh 0;
+  text-decoration: none;
+  color: black;
+}
+
+.select-catagory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-bottom: 6vh;
+}
+
+.leadership {
+  background-color: rgb(137,223, 255);
+  background: linear-gradient(90deg, rgb(93, 58, 155) 25%, rgb(137,223, 255) 80%);
+  display: flex;
+  font-size: .6em;
+  align-items: center;
+  justify-content: center;
+}
+
+.leadership-logo {
+  height: 3vh;
+}
+
+.inspirational {
+  background-image: url('../../Images/CatBoss.jpeg');
+  background-size: cover;
+}
+
+.inspirational-title {
+  margin-top: 11vh;
+  color: aliceblue;
+  background-color: black;
+  font-size: .9em;
+  height: 2em;
+  width: 100%;
+}
+
+.laughs {
+  background: repeating-linear-gradient(
+  45deg,
+  rgb(153, 170, 171),
+  yellow 10px,
+  #465298 10px,
+  #465298 20px
+);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laughs-title {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  margin-bottom: 9vh;
+}
+
+.microphone {
+  height: 2vh;
+  width: 4vw;
+}
+
+.user-led-nav {
+  width: 100vw;
+  margin-top: 35px;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.favorites-from-home {
+  border: solid 5px whitesmoke;
+  background-color:black ;
+  color: white;
+  padding: 3%;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  margin: 0 2vw 0 2vw 0;
+  align-self: center;
+  border-radius: 30px;
+}
+
+.home-to-searched {
+  border: solid 5px black;
+  background-color:chartreuse;
+  padding: 3%;
+  margin: 0 2vw 0 2vw 0;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  align-self: center;
+  border-radius: 30px;
+}
