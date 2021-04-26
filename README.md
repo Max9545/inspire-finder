@@ -47,7 +47,7 @@ This project uses Create-React-App to build an application which allows users to
 visit deployed site [here](https://inspire-finder.herokuapp.com)
 
 1. Additionally you can clone down the repo [here](https://github.com/Max9545/inspire-finder)
-2. Move into the gallery-time directory in your terminal.
+2. Move into the inspire-finder directory in your terminal.
 3. To see the code itself locally, run `<name of text editor> .`
 - Run `npm install`
 - Run `npm start`
