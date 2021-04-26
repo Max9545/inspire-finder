@@ -18,13 +18,13 @@
 
 ## About The Project
 
-This project used Create-React-App to build an application which allows users to see lists of quotes on the topics of Hope, Leadership, Inspiration, Comedy, or any topic of the user's choosing. Quotes can be saved to viewe later and are sorted by styles and colors. Throughout the project, learning goals included:
+This project uses Create-React-App to build an application which allows users to see lists of quotes on the topics of Hope, Leadership, Inspiration, Comedy, or any topic of the user's choosing in order to set intentions for themselves and those around them for the day. Quotes can be saved to view later and are sorted by styles and colors. Throughout the project, learning goals included:
 
-- Architect an application structure using functional components and hooks
-- Solidify competency with React fundamentals and state management
-- Effiecient time managenemnt on solo made app 
+- Architect an application structure using functional components and Hooks
+- Solidify competency with React fundamentals, controlled forms, and state management
+- Effiecient time managenemnt on solo made application 
 - Working with React Hooks & asynchronous JS using Cypress testing
-- Create a multi-page UX using Router
+- Creating a multi-page UX using Router with error handling
 - Using the FavQ's API.
 - Deployment using Heroku
 
@@ -42,7 +42,6 @@ This project used Create-React-App to build an application which allows users to
 - Cypress
 - FavQ's api
 
-
 ## Set-up Instructions
 
 visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
@@ -53,29 +52,37 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 - Run `npm install`
 - Run `npm start`
 - visit http://localhost:3000/
-- will need a FavQ's Authorization  Token
+- will need a FavQ's Authorization Token to insert into the headers object:
+
+```javascript
+    {
+    method: 'GET',
+    headers: {
+      'Authorization': 'Token 8bc7dfa7e20dffcf95c9191267966f40'    
+    }
+```
 
 ## Learning Goals
 
-- Deeper understanding of React fundamentals including components, props, state, JSX, hooks.
+- Deeper understanding of React fundamentals including components, props, state, JSX, and Hooks.
 - End to End testing using Cypress
-- Refactoring an application to utilize React Router
+- Utilizing React Router
 - Deploying an application on Heroku
-- Utilize PWA to run application offline.
-
 
 ## Challenges
 
 1. Planning: intentionally planning an overall strategy before writing code. This included component structures and state if applicable
-2. Using Cypress testing, to implement E2E testing and throughly test all user flows including stubbing api calls
-3. Using the FavQ's Api with an Authorization Token.
+2. Comprehensive colorful wireframes
+3. Detailed user stories to drive development  
+4. Using Cypress testing to implement E2E testing and throughly test all user flows including stubbing api calls
+5. Using the FavQ's Api with an Authorization Token.
 
 ## Wins
 
 1. Implementing the MVP in a timely and efficient manner
 2. Improvement of Cypress testing methodologies 
-3. Mobile first design.
-4. Dynamic rendering of components on multiple levels 
+3. Mobile first design
+4. Dynamic rendering and reuse of components on multiple levels 
 
 ## Functionality
 
@@ -96,9 +103,6 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 
 #### Can choose a topic and see the subsequent quotes 
 ![Site Use of Searched Quotes Page](https://media.giphy.com/media/KYagOGBdL2ywTmFpeO/giphy.gif)
-
-#### 
-![Site Use]()
 
 ## Contributers
 
