@@ -44,7 +44,7 @@ This project uses Create-React-App to build an application which allows users to
 
 ## Set-up Instructions
 
-visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
+visit deployed site [here](https://inspire-finder.herokuapp.com)
 
 1. Additionally you can clone down the repo [here](https://github.com/Max9545/inspire-finder)
 2. Move into the gallery-time directory in your terminal.
