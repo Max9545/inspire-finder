@@ -83,13 +83,16 @@ visit deployed site [here](https://inspire-finder.herokuapp.com/favorites)
 ![Site Use of the Hope Page](https://media.giphy.com/media/Nu99wE2nocJwQ1NyMf/giphy.gif)
 
 #### Leadership Page
-![Site Use of the Leadership](https://media.giphy.com/media/PZD9f02O5sCLbOqQau/giphy.gif)
+![Site Use of the Leadership Page](https://media.giphy.com/media/PZD9f02O5sCLbOqQau/giphy.gif)
 
 #### Inspirational Page
-![Site Use]()
+![Site Use of Inspirational Page](https://media.giphy.com/media/XTObAS1k9gRc4KgYxY/giphy.gif)
 
 #### Laughs Page
-![Site Use]()
+![Site Use of Laughs Page]()
+
+#### Searched Page
+![Site Use of Searched Page]()
 
 #### Can choose a topic and see the subsequent quotes 
 ![Site Use]()
