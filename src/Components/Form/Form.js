@@ -22,12 +22,13 @@ function Form({ setSearchList }) {
             className='search-input'
             data-cy='search-input'
             type='text'
+            placeholder='Type Here'
             name='Search Any Topic'
             value={topic}
             onChange={e => setTopic(e.target.value)}
           />
         </label>
-        <input className='search-button' data-cy='search-button'type='submit' value='submit' />
+        <input className='search-button' data-cy='search-button'type='submit' value="submit and click 'See Searched'" />
       </form>
     </>
   )
