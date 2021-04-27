@@ -10,7 +10,7 @@
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
-  margin: 4vh 2vw 1vh 2vw;
+  margin: 2vh 2vw 1vh 2vw;
 }
 
 .search-input {
@@ -31,3 +31,4 @@
   align-self: center;
   border-radius: 30px;
 }
+

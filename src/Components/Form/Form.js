@@ -27,7 +27,7 @@ function Form({ setSearchList }) {
             onChange={e => setTopic(e.target.value)}
           />
         </label>
-        <input className='search-button' data-cy='search-button'type='submit' value='submit' />
+        <input className='search-button' data-cy='search-button'type='submit' value="submit and click 'See Searched'" />
       </form>
     </>
   )

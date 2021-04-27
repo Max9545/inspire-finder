@@ -1,6 +1,7 @@
 .home-page {
   display: flex;
   flex-direction: column;
+  /* min-height: 100vh; */
 }
 
 .hope {
@@ -23,7 +24,7 @@
   display: flex;
   border: 1px solid black;
   border-radius: 5px;
-  margin: 3vh 0 3vh 0;
+  margin: 3vh 0 0 0;
   text-decoration: none;
   color: black;
 }
@@ -121,3 +122,4 @@
   align-self: center;
   border-radius: 30px;
 }
+
