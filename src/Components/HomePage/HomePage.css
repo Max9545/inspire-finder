@@ -112,11 +112,11 @@
 
 .home-to-searched {
   border: solid 5px black;
-  background-color:chartreuse;
+  background-color:rgb(137,223, 255);
+  color: black;
   padding: 3%;
   margin: 0 2vw 0 2vw 0;
   text-decoration: none;
-  color: whitesmoke;
   font-weight: bold;
   align-self: center;
   border-radius: 30px;
