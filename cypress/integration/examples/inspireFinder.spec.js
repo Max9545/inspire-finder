@@ -41,7 +41,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Chuck Noland')
     .get('[data-cy=toggle-favorite]').should('exist')
-    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', '( + ) Add/Remove from Favorites ( - )')
   })
 
   it('Should have a Leadership Quotes Page that displays leadership quotes', () => {
@@ -58,7 +58,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Napoleon Bonaparte')
     .get('[data-cy=toggle-favorite]').should('exist')
-    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', '( + ) Add/Remove from Favorites ( - )')
   })
 
   it('Should have a Inspirational Quotes Page that displays inspirational quotes', () => {
@@ -75,7 +75,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=author]').should('exist')
     .should('contain', 'David Cameron')
     .get('[data-cy=toggle-favorite]').should('exist')
-    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', '( + ) Add/Remove from Favorites ( - )')
   })
 
   it('Should have a Funny Quotes Page that displays funny quotes', () => {
@@ -92,7 +92,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Mark Twain')
     .get('[data-cy=toggle-favorite]').should('exist')
-    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', '( + ) Add/Remove from Favorites ( - )')
   })
 
   it('Should have a Favorites Quotes Page that lets you know when you have no favorite quotes', () => {
@@ -215,7 +215,7 @@ context('Inspire Finder', () => {
     .get('[data-cy=author]').should('exist')
     .should('contain', 'Mark Twain')
     .get('[data-cy=toggle-favorite]').should('exist')
-    .should('contain', '( + ) Toggle Remembrance ( - )')
+    .should('contain', '( + ) Add/Remove from Favorites ( - )')
     .click()
     .get('[data-cy=no-user-data]').should('exist')
     .should('contain', 'No Favorites yet')  
