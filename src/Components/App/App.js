@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css';
-import CardDisplay from '../CardDisplay/CardDisplay.js'
+import CardDisplay from '../CardDisplay/CardDisplay.tsx'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
 import UserLedDisplay from '../UserLedDisplay/UserLedDisplay.js'

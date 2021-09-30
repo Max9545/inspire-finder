@@ -1,16 +1,9 @@
 import './Card.css'
 import PropTypes from 'prop-types';
 import React from 'react';
+import { CardProps } from '../../interface';
 
-type Props = {
-  quote: string,
-  author: string,
-  id: number,
-  quoteType: string,
-  toggleFavorite: Function,
-}
-
-function Card({ quote, author, toggleFavorite, id, quoteType }: Props) {
+function Card({ quote, author, toggleFavorite, id, quoteType }: CardProps) {
   return (
     <div className={`card ${quoteType}-card`} data-cy='card'>
       <p className={`quote ${quoteType}-quote`} data-cy='quote'>{quote}</p>

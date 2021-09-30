@@ -4,23 +4,26 @@ import Header from '../Header/Header.js'
 import { useEffect, useState } from 'react'
 import { fetchQuotes } from '../../apiCalls'
 import PropTypes from 'prop-types';
+import React from 'react'
+import { Quote } from '../../interface';
+
 
 function CardDisplay({ quoteType, toggleFavorite }) {
 
 
   const [currentCards, setCurrentCards] = useState()
-  const [quoteList, setQuoteList] = useState([])
+  const [quoteList, setQuoteList] = useState<Quote[]>([])
 
 
   useEffect(() => {
     fetchQuotes(quoteType)
-    .then(data => setQuoteList(data.quotes))
+    .then((data: { quotes: React.SetStateAction<Quote[]> }) => setQuoteList(data.quotes))
   },[])
 
 
   useEffect(() => {
     if(quoteList) {
-      const latestCards = quoteList.map((quote) => {
+      const latestCards:JSX.Element[] = quoteList.map((quote) => {
         if(quote.body) {
           return (
             <>
@@ -35,7 +38,6 @@ function CardDisplay({ quoteType, toggleFavorite }) {
             </>
           )
         }
-
       })
       setCurrentCards(latestCards)
     }
