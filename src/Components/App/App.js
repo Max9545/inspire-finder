@@ -29,12 +29,19 @@ function App() {
     <div className='app'>
      <Switch>
       <Route exact path='/' render={() => <HomePage setSearchList={setSearchList}/>}/>
+
       <Route exact path='/hope' render={() => <CardDisplay quoteType='hope' toggleFavorite={toggleFavorite}/>}/>
+
       <Route exact path='/leadership' render={() => <CardDisplay quoteType='leadership' toggleFavorite={toggleFavorite}/>}/>
+
       <Route exact path='/inspirational' render={() => <CardDisplay quoteType='inspirational' toggleFavorite={toggleFavorite}/>}/>
+
       <Route exact path='/laughs' render={() => <CardDisplay quoteType='funny' toggleFavorite={toggleFavorite}/>}/>
+
       <Route exact path='/searched' render={() => <UserLedDisplay quoteList={searchList} toggleFavorite={toggleFavorite} type='searched'/>}/>
+
       <Route exact path='/favorites' render={() => <UserLedDisplay quoteList={favorites} toggleFavorite={toggleFavorite} type='favorites'/>}/>
+      
       <Redirect from="*" to='/'/>
      </Switch>
      

@@ -1,5 +1,5 @@
 import './CardDisplay.css'
-import Card from '../Card/Card.js'
+import Card from '../Card/Card.tsx'
 import Header from '../Header/Header.js'
 import { useEffect, useState } from 'react'
 import { fetchQuotes } from '../../apiCalls'
