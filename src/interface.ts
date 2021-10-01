@@ -10,7 +10,20 @@ export interface CardProps {
   author: string,
   id: number,
   quoteType: string,
-  toggleFavorite(): void
+  toggleFavorite: (arg1: NewFavorite) => void
 }
+
+export interface NewFavorite {
+  quote: string,
+  author: string,
+  id: number,
+  quoteType: string,
+}
+
+export interface DisplayProps {
+  quoteType: string,
+  toggleFavorite: (arg1: NewFavorite) => void
+}
+
 
 

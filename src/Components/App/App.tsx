@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import './App.css';
-import CardDisplay from '../CardDisplay/CardDisplay.tsx'
+import CardDisplay from '../CardDisplay/CardDisplay'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import HomePage from '../HomePage/HomePage.js'
 import UserLedDisplay from '../UserLedDisplay/UserLedDisplay.js'
+import { NewFavorite } from '../../interface';
 
 
 function App() {
 
-  const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState<NewFavorite[] | []>([])
   const [searchList, setSearchList] = useState([])
 
-  const toggleFavorite = (newFavorite) => {
+  const toggleFavorite = (newFavorite: NewFavorite) => {
       if(!favorites.some(favorite => favorite.id === newFavorite.id)) {
         // favorites.push(newFavorite)
         // setFavorites(favorites)
