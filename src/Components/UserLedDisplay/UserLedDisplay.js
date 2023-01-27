@@ -1,5 +1,5 @@
 import './UserLedDisplay.css'
-import Card from '../Card/Card.js'
+import Card from '../Card/Card.tsx'
 import Header from '../Header/Header.js'
 import PropTypes from 'prop-types';
 
