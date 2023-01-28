@@ -1,6 +1,6 @@
 export const fetchQuotes = quoteType => {
   return fetch(`https://favqs.com/api/quotes/?filter=${quoteType}&type=tag`, {
-    cors: Access-Control-Allow-Origin: *
+    cors: Access-Control-Allow-Origin: *,
     method: 'GET',
     headers: {
       'Authorization': 'Token 8bc7dfa7e20dffcf95c9191267966f40'    
@@ -16,7 +16,7 @@ export const fetchQuotes = quoteType => {
 
 export const searchQuotes = topic => {
   return fetch(`https://favqs.com/api/quotes/?filter=${topic}`, {
-    cors: Access-Control-Allow-Origin: *
+    cors: Access-Control-Allow-Origin: *,
     method: 'GET',
     headers: {
       'Authorization': 'Token 8bc7dfa7e20dffcf95c9191267966f40'    
