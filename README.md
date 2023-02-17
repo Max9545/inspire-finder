@@ -28,7 +28,7 @@ This project uses Create-React-App to build an application which allows users to
 - Using the FavQ's API.
 - Deployment using Heroku
 
-- [Deployed app](https://inspire-finder.herokuapp.com)
+- [Deployed app](https://inspire-finder.vercel.app/hope)
 - [Project Brief and Rubric](https://frontend.turing.edu/projects/module-3/niche-audience.html)
 
 
