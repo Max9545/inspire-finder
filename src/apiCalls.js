@@ -1,5 +1,5 @@
 export const fetchQuotes = quoteType => {
-  return fetch(`https://favqs.com/api/quotes/?filter=${quoteType}&type=tag`, {
+  return fetch(`https://stormy-eyrie-07248.herokuapp.com/https://favqs.com/api/quotes/?filter=${quoteType}&type=tag`, {
     mode: 'cors',
     method: 'GET',
     headers: {
@@ -16,7 +16,7 @@ export const fetchQuotes = quoteType => {
 }
 
 export const searchQuotes = topic => {
-  return fetch(`https://favqs.com/api/quotes/?filter=${topic}`, {
+  return fetch(`https://stormy-eyrie-07248.herokuapp.com/https://favqs.com/api/quotes/?filter=${topic}`, {
     // cors: Access-Control-Allow-Origin: *,
     method: 'GET',
     headers: {
